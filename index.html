@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>遠足お菓子セレクター</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js"></script>
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@capgame_" />
+		<meta property="og:url" content="https://capgame.github.io/TripSnackSelector" />
+		<meta property="og:title" content="遠足お菓子セレクター" />
+		<meta property="og:description" content="「300円まで」などの基準に合ったお菓子を選ぶサイトです。自分でお菓子を登録できます。" />
+		<meta property="og:image" content="ogp.png" /> 
+	</head>
+	<body>
+	<div id="wrapper">
+		<h1>遠足お菓子セレクター</h1>
+		<h2>お菓子を登録してね</h2>
+		<div id="addItems">
+			<div class="itemData">
+				<label for="selectImage">
+					<img id="itemImage" src="camera.png">
+					<input type="file" id="selectImage" accept="image/*">
+				</label>
+			</div>
+			<div class="itemData">
+				<p>お菓子の名前：<input type="text" id="itemName" placeholder="あめ"></p>
+				<p>　値段（円）：<input type="number" id="itemPrice" placeholder="30"></p>
+			</div>
+			<div class="itemData">
+				<a type="button" class="button" id="add" href="#">追加</a>
+			</div>
+		</div>
+		<h2>おかしの種類</h2>
+		<div id="okashis"></div>
+		<p>何円まで？<input type="number" id="maxPrice" value="300" placeholder="例：300 など">
+			<a id="searchButton" class="button" href="#">検索する</a></p>
+		<h2>結果</h2>
+		<div id="results">
+
+		</div>
+	</div>
+	</body>
+</html>

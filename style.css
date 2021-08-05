@@ -1,0 +1,145 @@
+body {
+	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+	text-align: center;
+
+	background-image: url("ensoku.png");
+}
+#wrapper{
+	border: 2px solid #000;
+	padding: 2em;
+	display: inline-block;
+	background-color: #FFF;
+}
+
+
+#itemImage{
+	width: 8rem;
+	height: 8rem;
+	padding: 1rem;
+	border: 1px solid #000;
+}
+
+#addItems{
+	padding: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+label > input{
+	display: none;
+}
+label{
+	color: #CCCCCC;
+	font-size: 5em;
+	margin: 1rem;
+}
+input{
+	font-size: inherit;
+	margin: 0 1rem;
+}
+
+#add{
+	font-family: inherit;
+	border: none;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+}
+
+
+#searchButton{
+	font-size: 1.5em;
+	border-radius: 1rem;
+}
+
+.button{
+	background-color: #2e68ee;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0.4em 0.6em;
+}
+.button:hover{
+	background-color: #285edd;
+}
+
+#okashis{
+	text-align: center;
+	margin: center;
+	flex-direction: column;
+}
+
+.okashiCard{
+	margin: 1rem auto;
+
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	max-width: 500px;
+	height: 8em;
+
+	border: 1px solid #000;
+}
+.okashiCard img{
+	width: 128px;
+	min-height: 128px;
+}
+.okashiCard .data{
+	flex-grow: 1;
+}
+.price{
+	font-size: 2em;
+}
+
+.removeButton{
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	background-color: red;
+	width: 1em;
+	height: 1em;
+	font-size: 1.5rem;
+}
+
+
+
+.price{
+	font-size: 2em;
+	font-weight: bold;
+}
+#not-exist{
+	font-size: 5em;
+}
+
+
+#resultCard{
+	margin: 1rem auto;
+
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 500px;
+
+	border: 1px solid #000;
+}
+.difference{
+	width: 100%;
+	text-align: center;
+}
+.resultItems{
+	display: flex;
+	flex-direction: row;
+}
+
+.description{
+	width: 100%;
+	text-align: center;
+}
+
+.tweet{
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #4882ee;
+	color: #FFF;
+	text-decoration: none;
+}
