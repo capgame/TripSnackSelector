@@ -40,9 +40,9 @@ const okashiData = [
 		price: 10,
 	},
 	{
-		image: "image/wasabinori_12.png",
-		name: "わさびのり",
-		price: 12,
+		image: "image/yocchanika_40.png",
+		name: "よっちゃんイカ",
+		price: 40,
 	}
 ];
 
