@@ -9,6 +9,41 @@ let okashiPrice;
 
 
 const okashiData = [
+	{
+		image: "image/haichu_100.png",
+		name: "ハイチュウ",
+		price: 100,
+	},
+	{
+		image: "image/jagariko_150.png",
+		name: "じゃがりこ",
+		price: 150,
+	},
+	{
+		image: "image/koara_80.png",
+		name: "コアラのマーチ",
+		price: 80,
+	},
+	{
+		image: "image/potechi_84.png",
+		name: "ポテトチップス",
+		price: 84,
+	},
+	{
+		image: "image/takenokoha_160.png",
+		name: "たけのこの里",
+		price: 160,
+	},
+	{
+		image: "image/umaibou_10.png",
+		name: "うまい棒",
+		price: 10,
+	},
+	{
+		image: "image/wasabinori_12.png",
+		name: "わさびのり",
+		price: 12,
+	}
 ];
 
 
@@ -43,6 +78,8 @@ onload = () => {
 		}
 		search(okashiData,maxPrice);
 	};
+
+	redrawOkashis();
 };
 
 function addOkashi(){
