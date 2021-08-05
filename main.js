@@ -188,8 +188,11 @@ function search(data,price){
 		for(let i = 0;i < b.length;i++){
 			sumB += data[b[i]].price;
 		}
-		const dA = Math.abs(300 - sumA);
-		const dB = Math.abs(300 - sumB);
+		const sameA = a.length - [...new Set(a)].length;
+		const sameB = b.length - [...new Set(b)].length;
+
+		const dA = Math.abs(300 - sumA) + (sameA ** 2 / 1.5);
+		const dB = Math.abs(300 - sumB) + (sameB ** 2 / 1.5);
 		if(dA < dB){
 			return -1;
 		}
